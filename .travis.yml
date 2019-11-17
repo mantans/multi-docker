@@ -17,7 +17,7 @@ after_success:
 # Log in to the Docker CLI
  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 # Take Those Images and Push Them to Docker Hub
- - docker push -t g0retex/multi-client
- - docker push -t g0retex/multi-nginx
- - docker push -t g0retex/multi-server
- - docker push -t g0retex/multi-worker
+ - docker push g0retex/multi-client
+ - docker push g0retex/multi-nginx
+ - docker push g0retex/multi-server
+ - docker push g0retex/multi-worker
